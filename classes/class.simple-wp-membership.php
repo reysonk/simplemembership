@@ -670,30 +670,30 @@ class SimpleWpMembership {
         $loc_data = array(
             'ajaxUserCall' => array(
                 'url' => admin_url('admin-ajax.php'),
-                'alertTextLoad' => '* ' . SwpmUtils::_('Validating, please wait'),
+               'alertTextLoad' => '* ' . SwpmUtils::_('Проверяю, пожалуйста, подождите'),
             ),
             'ajaxEmailCall' => array(
                 'url' => admin_url('admin-ajax.php'),
-                'alertTextLoad' => '* ' . SwpmUtils::_('Validating, please wait'),
+                'alertTextLoad' => '* ' . SwpmUtils::_('Проверяю, пожалуйста, подождите'),
             ),
             'email' => array(
-                'alertText' => '* ' . SwpmUtils::_('Invalid email address'),
+                'alertText' => '* ' . SwpmUtils::_('Не верный email адрес'),
             ),
             'required' => array(
-                'alertText' => '* ' . SwpmUtils::_('This field is required'),
+                'alertText' => '* ' . SwpmUtils::_('Это поле обязательно к заполнению'),
             ),
             'strongPass' => array(
-                'alertText' => '* ' . SwpmUtils::_('Password must contain at least:').'<br>'.SwpmUtils::_('- a digit').'<br>'.SwpmUtils::_('- an uppercase letter').'<br>'.SwpmUtils::_('- a lowercase letter'),
+                'alertText' => '* ' . SwpmUtils::_('Пароль должен содержать как минимум:').'<br>'.SwpmUtils::_('- цифру').'<br>'.SwpmUtils::_('- буква в верхнем регистре').'<br>'.SwpmUtils::_('- строчная буква'),
             ),
             'SWPMUserName' => array(
-                'alertText' => '* ' . SwpmUtils::_('Invalid Username').'<br>'.SwpmUtils::_('Usernames can only contain: letters, numbers and .-_*@'),
+                'alertText' => '* ' . SwpmUtils::_('Неверное имя пользователя').'<br>'.SwpmUtils::_('Имена пользователей могут содержать только: буквы, цифры и.-_ * @'),
             ),
             'minSize' => array(
-                'alertText' => '* ' . SwpmUtils::_('Minimum '),
-                'alertText2' => SwpmUtils::_(' characters required'),
+                'alertText' => '* ' . SwpmUtils::_('Минимум '),
+                'alertText2' => SwpmUtils::_(' требуемые символы'),
             ),
             'noapostrophe' => array(
-                'alertText' => '* ' . SwpmUtils::_('Apostrophe character is not allowed'),
+                'alertText' => '* ' . SwpmUtils::_('Апостроф не допускается.'),
             ),
         );
 

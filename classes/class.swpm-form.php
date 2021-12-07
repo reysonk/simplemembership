@@ -67,11 +67,19 @@ class SwpmForm {
     protected function first_name() {
         $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
         $this->sanitized['first_name'] = sanitize_text_field($first_name);
+        if (empty($first_name)) {
+            $this->errors['first_name'] = SwpmUtils::_('Пожалуйста, введите имя.');
+            return;
+                }
     }
 
     protected function last_name() {
         $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
         $this->sanitized['last_name'] = sanitize_text_field($last_name);
+        if (empty($first_name)) {
+            $this->errors['last_name'] = SwpmUtils::_('Пожалуйста, введите фамилию.');
+            return;
+                }
     }
 
     protected function password() {
