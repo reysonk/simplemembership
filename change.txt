@@ -1,0 +1,19 @@
+class.swpm-form.php
+
+
+    protected function first_name() {
+        $first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
+        if (empty($first_name)) {
+		$this->errors['first_name'] = SwpmUtils::_('Требуется ввести имя.');
+			return;
+		}
+        $this->sanitized['first_name'] = sanitize_text_field($first_name);
+    }
+
+    protected function last_name() {
+        $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
+        if (empty($last_name)) {
+		$this->errors['last_name'] = SwpmUtils::_('Требуется ввести фамилию.');	
+			return;
+		}
+        $this->sanitized['last_name'] = sanitize_text_field($last_name);
