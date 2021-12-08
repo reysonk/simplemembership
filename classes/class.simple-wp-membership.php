@@ -683,7 +683,7 @@ class SimpleWpMembership {
                 'alertText' => '* ' . SwpmUtils::_('Это поле обязательно к заполнению'),
             ),
             'strongPass' => array(
-                'alertText' => '* ' . SwpmUtils::_('Пароль должен содержать как минимум:').'<br>'.SwpmUtils::_('- цифру').'<br>'.SwpmUtils::_('- буква в верхнем регистре').'<br>'.SwpmUtils::_('- строчная буква'),
+                'alertText' => '* ' . SwpmUtils::_('Пароль должен содержать как минимум:').'<br>'.SwpmUtils::_('- цифру').'<br>'.SwpmUtils::_('- буква в верхнем регистре').'<br>'.SwpmUtils::_('- строчная буква').'<br>'.SwpmUtils::_('- Быть на латинице'),
             ),
             'SWPMUserName' => array(
                 'alertText' => '* ' . SwpmUtils::_('Неверное имя пользователя').'<br>'.SwpmUtils::_('Имена пользователей могут содержать только: буквы, цифры и.-_ * @'),
