@@ -2128,7 +2128,7 @@
 		// the array is used during ajax form validation to detect issues early and prevent an expensive submit
 		ajaxValidCache: {},
 		// Auto update prompt position after window resize
-		autoPositionUpdate: true,
+		autoPositionUpdate: false,
 
 		InvalidFields: [],
 		onFieldSuccess: false,

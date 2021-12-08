@@ -76,7 +76,7 @@ class SwpmForm {
     protected function last_name() {
         $last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
         $this->sanitized['last_name'] = sanitize_text_field($last_name);
-        if (empty($first_name)) {
+        if (empty($last_name)) {
             $this->errors['last_name'] = SwpmUtils::_('Пожалуйста, введите фамилию.');
             return;
                 }
